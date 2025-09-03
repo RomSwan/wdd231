@@ -39,21 +39,71 @@ h1 {
     font-size: 2.2rem;
 }
 
-/*NAVBAR*/
-#navbar {
-    background-color: var(--main-colour);
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    border: 0;
+    margin: 0;
+    background: none;
+    color: var(--accent-colour1);
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
-.navigation li {
-    list-style-type: none;
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-colour);
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    transition: max-height .75s ease-in-out;
+    overflow: hidden;
+    position: static;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    max-height: 0;
 }
 
 .navigation a {
+    display: none;
+    padding: .5rem;
     text-decoration: none;
+    color: white;
+    width: 100%;  
+    text-align: center;
+    font-weight: 700;
 }
 
+#home a, .navigation a:hover {
+    background-color: var(--secondary-colour);
+}
 
+.open a {
+    display: block;
+}
 
+.open.navigation {
+    border: 2px solid var(--accent-colour1);
+    max-height: 300px;
+}
+
+#navbar {
+    background-color: var(--main-colour);
+}
 
 /*MAIN*/
 section {

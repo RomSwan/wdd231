@@ -9,21 +9,22 @@
 
     .navigation {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-height: none;
         padding: 0;
         margin-left: 15px;
-        gap: 10px;
+        margin-top: 15px;
+        gap: 20px;
     }
 
     .navigation a {
         display: inline-block;
         text-decoration: none;
+        text-align: center;
         color: var(--accent-colour2);
         padding: 10px;
         font-weight: 700;
-    }
-
-    #home, .navigation a:hover {
-        background-color: var(--secondary-colour);
     }
 
     /*ABOUT STUDENT*/
