@@ -1,4 +1,8 @@
 @media (min-width: 800px) {
+    #heading {
+        margin-bottom: -15px;
+    }
+    
     #menu {
         display: none;
     }
