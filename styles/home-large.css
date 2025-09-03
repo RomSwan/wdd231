@@ -1,0 +1,35 @@
+@media (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin-left: 15px;
+        gap: 10px;
+    }
+
+    .navigation a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--accent-colour2);
+        padding: 10px;
+        font-weight: 700;
+    }
+
+    #home, .navigation a:hover {
+        background-color: var(--secondary-colour);
+    }
+
+    /*ABOUT STUDENT*/
+    #about-student {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    /*COURSES*/
+    .two {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

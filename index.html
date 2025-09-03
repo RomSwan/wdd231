@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - WDD 231 - Class Projects</title>
+    <!--Description-->
+    <meta name="author" content="Brendan Brady">
+    <meta name="description" content="Home page about me.">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <!--JS-->
+    <script src="scripts/home.js" defer></script>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <header>
+        <div id="heading">
+            <img class="logo" src="images/byu-pathways-logo.svg" alt="website logo" loading="lazy">
+            <p>WDD 231 - Class Projects</p>
+        </div>
+
+        <div id="navbar">
+            <button type="button" id="menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="chamber"><a href="chamber.html">Chamber Project</a></li>
+                    <li id="final"><a href="final.html">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Home</h1>
+    </header>
+
+    <main>
+        <div id="about-student">
+            <section id="about">
+                <h2>About Me</h2>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. 
+                    Sed repellendus eveniet maiores, 
+                    eligendi maxime provident rem perspiciatis non eum veritatis quaerat hic, 
+                    quod itaque natus explicabo. 
+                    Veritatis, atque! Quia, non?
+                </p>
+            </section>
+
+            <section id="student">
+                <h2>Student Photo</h2>
+                <div class="frame">
+                    <img class="photo" src="images/profile.jpg" alt="Brendan Brady" loading="lazy">
+                </div>
+            </section>
+        </div>
+
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="row one">
+                <a href="#"><div>All</div></a>
+                <a href="#"><div>CSE</div></a>
+                <a href="#"><div>WDD</div></a>
+            </div>
+
+            <div class="row two">
+                <a href="#"><div>WDD 130</div></a>
+                <a href="#"><div>WDD 131</div></a>
+                <a href="#"><div>WDD 231</div></a>
+            </div>
+
+            <p>The total credits for course listed above is 6</p>
+        </section>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com"><img class="social" src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+            <a href="https://www.github.com"><img class="social" src="images/github.svg" alt="GitHub" loading="lazy"></a>
+            <a href="https://www.x.com"><img class="social" src="images/x.svg" alt="X" loading="lazy"></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🥟 Brendan Brady 🥟 Poland</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

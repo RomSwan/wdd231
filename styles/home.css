@@ -1,0 +1,161 @@
+:root {
+    --main-colour: #3338A0; /*Blue (Pigment)*/
+    --secondary-colour: #C59560; /*Brown Yellow*/
+    --accent-colour1: #FCC61D; /*Deep Lemon*/
+    --accent-colour2: #F7F7F7; /*Cultured*/
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    color: black;
+    background-color: var(--accent-colour2);
+}
+
+/*HEADER*/
+#heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+    margin-left: 10px;
+    gap: 15px;
+}
+
+#heading p {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+}
+
+h1 {
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 2.2rem;
+}
+
+/*NAVBAR*/
+#navbar {
+    background-color: var(--main-colour);
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+
+
+
+/*MAIN*/
+section {
+    border: 3px solid var(--main-colour);
+    margin: 15px;
+    background-color: var(--secondary-colour);
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--main-colour);
+    color: var(--accent-colour2);
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.paragraph {
+    margin: 10px;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.photo {
+    width: 475px;
+    height: auto;
+    border: 2px solid var(--accent-colour1);
+    overflow: hidden;
+}
+
+/*COURSES*/
+#courses {
+    background-color: var(--accent-colour2);
+    border: none;
+}
+
+.row {
+    display: grid;
+}
+
+.row a {
+    text-align: center;
+    border: 2px solid var(--accent-colour1);
+    background-color: var(--secondary-colour);
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.one {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.one a {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.two {
+    font-weight: 500;
+}
+
+.two a {
+    padding: 3px;
+}
+
+#courses p {
+    text-align: center;
+    margin: 3px;
+}
+
+/*FOOTER*/
+footer {
+    grid-column: 1 / 4;
+    text-align: center;
+    background-color: var(--main-colour);
+    color: var(--accent-colour1);
+    font-weight: 600;
+    padding: 1px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 8px;
+}
+
+.social {
+    height: 3.5rem;
+    width: auto;
+}
+
+#lastModified {
+    font-size: small;
+}
