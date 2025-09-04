@@ -149,12 +149,11 @@ h2 {
     display: grid;
 }
 
-.row a {
+.row div {
     text-align: center;
     border: 2px solid var(--accent-colour1);
     background-color: var(--secondary-colour);
     margin: 5px;
-    text-decoration: none;
     color: black;
 }
 
@@ -162,9 +161,19 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     font-weight: 700;
     font-size: 1.15rem;
+    cursor: pointer; 
 }
 
-.one a {
+.group.displaying {
+    background-color: var(--main-colour);
+    color: var(--accent-colour2);
+}
+
+.group:hover {
+    color: var(--accent-colour2);
+}
+
+.group {
     padding: 10px;
     border-radius: 10px;
 }
@@ -173,8 +182,13 @@ h2 {
     font-weight: 500;
 }
 
-.two a {
+.two div {
     padding: 3px;
+}
+
+.two div.completed {
+    background-color: var(--accent-colour1);
+    border: 2px solid var(--secondary-colour);
 }
 
 #courses p {
