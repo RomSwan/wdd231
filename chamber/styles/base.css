@@ -1,0 +1,127 @@
+:root { /*Summer Ocean Breeze*/
+    --main-colour: #E63946; /*Desire*/
+    --secondary-colour: #f1faee; /*Honeydew*/
+    --accent-colour1: #a8dadc; /*Crystal*/
+    --accent-colour2: #457b9d; /*Jelly Bean Blue*/
+    --accent-colour3: #1d3557; /*Space Cadet*/
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: black;
+    background-color: var(--secondary-colour);
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+    background-color: var(--accent-colour2);
+    color: var(--secondary-colour);
+    font-weight: 600;
+    padding: 8px;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin-top: -15px;
+}
+
+#heading p {
+    font-size: 2rem;
+    white-space: nowrap;
+    padding: 0;
+}
+
+@media (max-width: 650px) {
+    #heading {
+        gap: .5rem;
+    }
+
+    .logo {
+        height: 75px;
+    }
+
+    #heading p {
+        font-size: 1.4rem;
+    }
+}
+
+/*Navbar*/
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    border: 0;
+    margin: 0;
+    background: none;
+    color: var(--accent-colour1);
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-colour);
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    transition: max-height .75s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+}
+
+.navigation a {
+    display: none;
+    padding: .5rem;
+    text-decoration: none;
+    color: white;
+    width: 100%;  
+    text-align: center;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-colour);
+    color: var(--main-colour)
+}
+
+.open a {
+    display: block;
+}
+
+.open.navigation {
+    border: 2px solid var(--accent-colour1);
+    max-height: 300px;
+}
