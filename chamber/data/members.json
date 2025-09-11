@@ -1,0 +1,73 @@
+{
+    "buisnesses": [
+        {
+            "name": "Raddisson Blu",
+            "address": "Plac Artura Zawiszy 1",
+            "email": "info.sobieski.warsaw@raddissonblu.com",
+            "phone": "+48 22 579 1000",
+            "url": "https://www.radissonhotels.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Radisson_Blu_logo.svg/320px-Radisson_Blu_logo.svg.png",
+            "level": "2"
+        },
+        
+        {
+            "name": "Rusiko",
+            "address": "Wierzbowa 11",
+            "email": "rezerwacje@rusiko.pl",
+            "phone": "+48 22 629 0628",
+            "url": "rusiko.pl/",
+            "logo": "https://www.rusiko.pl/wp-content/themes/rusiko_theme/images/logo_eng.png",
+            "level": "3"
+        },
+
+        {
+            "name": "KGHM Polska Miedź",
+            "address": "Rondo ONZ 1",
+            "email": "kghm@kghm.com",
+            "phone": "+48 76 748 0100",
+            "url": "https://kghm.com/",
+            "logo": "https://kghm.com/themes/custom/kghm/images/logo.png",
+            "level": "1"
+        },
+
+        {
+            "name": "Inglot",
+            "address": "Lwowska Street 154",
+            "email": "kontakt@inglot.pl",
+            "phone": "+48 16 678 0210",
+            "url": "https://inglot.pl/",
+            "logo": "https://inglot.pl/img/logo-1715947222.svg",
+            "level": "1"
+        },
+
+        {
+            "name": "LPP",
+            "address": "Łąkowa 39/44",
+            "email": "lpp@lpp.com",
+            "phone": "+48 58 76 96 900",
+            "url": "https://www.lpp.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/LPP_%28company%29_logo.svg/330px-LPP_%28company%29_logo.svg.png",
+            "level": "2"
+        },
+
+        {
+            "name": "11 Bit Studios",
+            "address": "Brzeska 2",
+            "email": "info@11bitstudios.com",
+            "phone": "+48 22 250 2910",
+            "url": "https://11bitstudios.com/",
+            "logo": "https://11bitstudios.com/wp-content/uploads/2020/10/11bitstudios_logo.png",
+            "level": "2"
+        },
+
+        {
+            "name": "Alior Bank",
+            "address": "Łopuszańska 38 D",
+            "email": "kontakt@alior.pl",
+            "phone": "+48 22 555 2323",
+            "url": "https://www.aliorbank.pl/",
+            "logo": "https://www.aliorbank.pl/dam/jcr:f0edda60-0383-48b7-a21b-1aaae29d9b80/logo.png",
+            "level": "3"
+        }
+    ]
+}
