@@ -1,4 +1,4 @@
-// fetch Data
+// Fetch Data
 const json = "data/members.json";
 
 async function getProphetData(json) {
