@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
     #heading {
         margin-bottom: -15px;
         padding: 10px;
@@ -34,7 +34,34 @@
 
     /*MAIN*/
     h1 {
-        margin-top: 50px;
         font-size: 3rem;
+    }
+
+    #events_weather section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #events_weather {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0 10px;
+    }
+
+    .weather-icon {
+        font-size: 6rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    #socials {
+        gap: 30px;
     }
 }
