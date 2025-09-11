@@ -1,12 +1,15 @@
 // Fetch Data
 const json = "data/members.json";
 
-async function getProphetData(json) {
+async function getBusinessInfo(json) {
     const response = await fetch(json);
     const data = await response.json();
 
-    createCardDisplay(data.buisnesses);
+    createCardDisplay(data.businesses);
 }
+
+// Display
+getBusinessInfo(json);
 
 // CARDS
 function createCardDisplay(members) {
