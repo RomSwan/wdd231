@@ -25,7 +25,7 @@ header {
     gap: 20px;
     background-color: var(--accent-colour2);
     color: var(--secondary-colour);
-    font-weight: 600;
+    font-weight: 700;
     padding: 8px;
 }
 
@@ -43,12 +43,12 @@ header {
 }
 
 #heading p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     white-space: nowrap;
     padding: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     #heading {
         gap: .5rem;
     }
@@ -106,7 +106,7 @@ header {
     display: none;
     padding: .5rem;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-colour);
     width: 100%;  
     text-align: center;
     font-weight: 700;
@@ -124,4 +124,97 @@ header {
 .open.navigation {
     border: 2px solid var(--accent-colour1);
     max-height: 300px;
+}
+
+/*MAIN*/
+h1 {
+    margin: 15px;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+/*Hero*/
+#hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid var(--accent-colour2);
+}
+
+#ticket-button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: box-shadow .3s ease, transform 1s ease, color .5s ease;
+    background-color: var(--main-colour);
+    border-color: var(--secondary-colour);
+    color: var(--secondary-colour);
+}
+
+#ticket-button:hover {
+    box-shadow: 4px 4px 4px var(--accent-colour1);
+    transform: scale(1.01);
+    color: white;
+}
+
+/*Events and Weather*/
+#events_weather {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+#events_weather section {
+    border: 3px solid var(--accent-colour2);
+    background-color: var(--accent-colour1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: var(--accent-colour3);
+    color: var(--secondary-colour);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+#events p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-icon {
+    text-align: center;
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+}
+
+#weather-stats, #forecast {
+    font-weight: 500;
+}
+
+.temp {
+    font-size: 1.5rem;
+}
+
+#forecast {
+    font-size: 1.5rem;
 }
