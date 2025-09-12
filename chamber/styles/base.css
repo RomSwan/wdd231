@@ -233,12 +233,18 @@ h1 {
     border-radius: 45px;
 }
 
-#grid, #list {
+.display-type {
     margin: 0;
     padding: 15px;
     font-size: 1.25rem;
     font-weight: 600;
     background-color: var(--secondary-colour);
+    cursor: pointer;
+}
+
+.display-type.display {
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
 }
 
 #grid {

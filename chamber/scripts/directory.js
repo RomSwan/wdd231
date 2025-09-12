@@ -65,3 +65,17 @@ function createCardDisplay(members) {
         document.querySelector("#buisness-cards").appendChild(link);
     });
 }
+
+// Change the display of buisness cards
+document.querySelector("#grid").classList.add("display");
+
+const displayType = document.querySelectorAll(".display-type");
+
+displayType.forEach(type => {
+    type.addEventListener("click", () => {
+
+        displayType.forEach(type => type.classList.remove("display"));
+
+        type.classList.add("display");
+    });
+});
