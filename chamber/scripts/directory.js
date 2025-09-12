@@ -20,23 +20,26 @@ function createCardDisplay(members) {
 
         let logo = document.createElement("figure"); // Logo
 
+        let info = document.createElement("div")
         let name = document.createElement("h3"); // Name
         let address = document.createElement("p"); // Address
         let email = document.createElement("p"); // Email
         let phone = document.createElement("p"); // Phone
-
         let level = document.createElement("p"); // Level
 
 
         // Set Attributes
         link.setAttribute("href", member.url); //Link
-        card.setAttribute("class", "card"); //Card
+        link.setAttribute("class", "link");
+        card.setAttribute("class", "card"); // Card
 
+        logo.setAttribute("class", "logo"); // Logo
+
+        info.setAttribute("class", "info");
         name.setAttribute("class", "name"); // Name
         address.setAttribute("class", "address"); // Address
         email.setAttribute("class", "email"); // Email
         phone.setAttribute("class", "phone"); // Phone
-
         level.setAttribute("class", "level"); // Level
 
         // Set Card Info
@@ -51,11 +54,12 @@ function createCardDisplay(members) {
 
         // Add Display to HTML
         card.appendChild(logo);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(email);
-        card.appendChild(phone);
-        card.appendChild(level);
+        card.appendChild(info);
+        info.appendChild(name);
+        info.appendChild(address);
+        info.appendChild(email);
+        info.appendChild(phone);
+        info.appendChild(level);
 
         link.appendChild(card);
         document.querySelector("#buisness-cards").appendChild(link);
