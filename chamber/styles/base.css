@@ -183,7 +183,7 @@ h1 {
     align-items: center;
 }
 
-h2 {
+#events_weather h2 {
     background-color: var(--accent-colour3);
     color: var(--secondary-colour);
     width: 99%;
@@ -221,13 +221,44 @@ h2 {
     font-size: 1.5rem;
 }
 
-/*BUISNESS CARDS*/
+/*MEMBERS*/
+#members-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--accent-colour3);
+    color: var(--secondary-colour);
+    font-size: 1.25rem;
+    margin: 30px 10px 15px 10px;
+    border-radius: 45px;
+}
+
+#grid, #list {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: var(--secondary-colour);
+}
+
+#grid {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 20px;
+}
+
+#list {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 20px;
+}
+
+/*Buisness Cards*/
 #buisness-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;;
 }
 
 .link {
