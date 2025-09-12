@@ -62,20 +62,29 @@ function createCardDisplay(members) {
         info.appendChild(level);
 
         link.appendChild(card);
-        document.querySelector("#buisness-cards").appendChild(link);
+        document.querySelector("#business-cards").appendChild(link);
     });
 }
 
-// Change the display of buisness cards
+// Change the display of business cards
 document.querySelector("#grid").classList.add("display");
 
+const businessCards = document.querySelector("#business-cards");
 const displayType = document.querySelectorAll(".display-type");
 
 displayType.forEach(type => {
     type.addEventListener("click", () => {
-
+        // Changes button colour
         displayType.forEach(type => type.classList.remove("display"));
-
         type.classList.add("display");
+        // Changes grid/list view
+        if (type.id === "list") 
+        {
+            businessCards.classList.add("list-view");
+        } 
+        else if (type.id === "grid")
+        {
+            businessCards.classList.remove("list-view");
+        }
     });
 });
