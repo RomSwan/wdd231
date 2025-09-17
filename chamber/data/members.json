@@ -7,7 +7,7 @@
             "phone": "+48 22 579 1000",
             "url": "https://www.radissonhotels.com/",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Radisson_Blu_logo.svg/320px-Radisson_Blu_logo.svg.png",
-            "level": "2"
+            "level": "SILVER"
         },
         
         {
@@ -17,7 +17,7 @@
             "phone": "+48 22 629 0628",
             "url": "https://www.rusiko.pl/",
             "logo": "https://www.rusiko.pl/wp-content/themes/rusiko_theme/images/logo_eng.png",
-            "level": "3"
+            "level": "GOLD"
         },
 
         {
@@ -27,7 +27,7 @@
             "phone": "+48 76 748 0100",
             "url": "https://kghm.com/",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kghm_nowe_logo.svg/330px-Kghm_nowe_logo.svg.png",
-            "level": "1"
+            "level": "BRONZE"
         },
 
         {
@@ -37,7 +37,7 @@
             "phone": "+48 16 678 0210",
             "url": "https://inglot.pl/",
             "logo": "https://inglot.pl/img/logo-1715947222.svg",
-            "level": "1"
+            "level": "BRONZE"
         },
 
         {
@@ -47,7 +47,7 @@
             "phone": "+48 58 76 96 900",
             "url": "https://www.lpp.com/",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/LPP_%28company%29_logo.svg/330px-LPP_%28company%29_logo.svg.png",
-            "level": "3"
+            "level": "GOLD"
         },
 
         {
@@ -57,7 +57,7 @@
             "phone": "+48 22 250 2910",
             "url": "https://11bitstudios.com/",
             "logo": "https://11bitstudios.com/wp-content/uploads/2020/10/11bitstudios_logo.png",
-            "level": "2"
+            "level": "SILVER"
         },
 
         {
@@ -67,7 +67,7 @@
             "phone": "+48 22 555 2323",
             "url": "https://www.aliorbank.pl/",
             "logo": "https://www.aliorbank.pl/dam/jcr:f0edda60-0383-48b7-a21b-1aaae29d9b80/logo.png",
-            "level": "3"
+            "level": "GOLD"
         }
     ]
 }
