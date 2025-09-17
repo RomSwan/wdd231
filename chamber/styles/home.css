@@ -56,9 +56,15 @@
     padding: 5px;
 }
 
+#event-info, #forecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #events p {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 20px 15px;
 }
 
 .stat-display {
@@ -66,19 +72,27 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.weather-icon {
-    text-align: center;
-    font-size: 10rem;
-    padding: 0;
-    margin: 0;
+#icon-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-icon {
+    transform: scale(1.25);
 }
 
 #weather-stats, #forecast {
     font-weight: 500;
 }
 
-.temp {
-    font-size: 1.5rem;
+#current-temp {
+    font-size: 2rem;
+}
+
+#description {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 #forecast {

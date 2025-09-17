@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/buisness-cards.css">
     <!--JS-->
     <script src="scripts/common.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/buisness-cards.js" defer></script>
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,35 +58,42 @@
         
         <div id="events_weather">
             <section id="events">
-                <h2>Events</h2>
-                <p>Coming soon!</p>
+                <h2>Upcoming Events</h2>
+                <div id="event-info">
+                    <p><b>Jubel</b> · Concert Hall, Thu, 25/09, 20:00.</p>
+                    <p><b>Sophie Ellis</b> · Concert Hall, Thu, 09/10, 20:00.</p>
+                    <p><b>ABCs of Attraction</b> · Srodmiescie, Fri, 17/10, 18:00.</p>
+                    <p><b>Avaz Oxun</b> · Bialolecka Cultural Center, Sun, 19/10, 17:30.</p>
+                    <p><b>Wola Scavenger Hunt</b> · Saxon Garden, Sat, 25/10, 12:30.</p>
+                </div>
             </section>
 
             <section id="current-weather">
                 <h2>Current Weather</h2>
 
                 <div class="stat-display">
-                    <p class="weather-icon">⛅</p>
+                    <div id="icon-display">
+                        <img id="weather-icon">
+                    </div>
 
                     <div id="weather-stats">
-                        <p class="temp"><b>19° C</b></p>
-                        <p><b>Partly Cloudy</b></p>
-                        <p><b>High:</b> 19°</p>
-                        <p><b>Low:</b> 11°</p>
-                        <p><b>Humidity:</b> 87%</p>
-                        <p><b>Sunrise:</b> 06:05</p>
-                        <p><b>Sunset:</b> 18:59</p>
+                        <p id="current-temp"></p>
+                        <p id="description"></p>
+                        <p><b>High:</b> <span id="temp-high"></span></p>
+                        <p><b>Low:</b> <span id="temp-low"></span></p>
+                        <p><b>Humidity:</b> <span id="humidity"></span></p>
+                        <p><b>Wind Speed:</b> <span id="wind-speed"></span></p>
                     </div>
                 </div>
             </section>
 
             <section id="weather-forecast">
-                <h2>Weather Forecast</h2>
+                <h2>3 Day Weather Forecast</h2>
 
                 <div id="forecast">
-                    <p><b>Yesterday:</b> 26°/17°</p>
-                    <p><b>Today: 19°/11°</b></p>
-                    <p><b>Tomorrow:</b> 24°/12°</p>
+                    <p><b>Tomorrow:</b> <span id="tomorrow"></span></p>
+                    <p><b>Day 2:</b> <span id="day2"></span></p>
+                    <p><b>Day 3:</b> <span id="day3"></span></p>
                 </div>
             </section>
         </div>
@@ -93,7 +101,6 @@
         <section id="spotlights">
             <div id="spotlight-bar">
                 <h2>Member Spotlight:</h2>
-                <p>(Ranked GOLD or SILVER)</p>
             </div>
 
             <div id="business-cards"></div>
