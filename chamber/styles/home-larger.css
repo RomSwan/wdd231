@@ -1,5 +1,9 @@
 @media (min-width: 1100px) {
     /*MAIN*/
+    .hero-img {
+        
+    }
+
     #events_weather section {
         display: flex;
         flex-direction: column;
