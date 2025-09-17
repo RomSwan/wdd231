@@ -77,7 +77,7 @@ function createCardDisplay(members) {
 }
 
 // Change the display of business cards
-document.querySelector("#grid").classList.add("display");
+document.querySelector("#grid");
 
 const businessCards = document.querySelector("#business-cards");
 const displayType = document.querySelectorAll(".display-type");
