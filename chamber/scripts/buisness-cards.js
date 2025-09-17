@@ -10,7 +10,9 @@ async function getBusinessInfo(json) {
     const index = window.location.pathname.includes("index");
     if(index) 
         {
-            members = members.filter(member => member.level == "3");
+            //members = members.filter(member => member.rank == "gold" && member.rank == "silver");
+            members.sort(() => .5 - Math.random());
+            members = members.slice(0, 3);
         }
 
     createCardDisplay(members);
