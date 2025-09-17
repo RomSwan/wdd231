@@ -1,9 +1,11 @@
 @media (min-width: 1100px) {
+    /*HEADER*/
     #heading {
         margin-bottom: -15px;
         padding: 10px;
     }
     
+    /*NAV BAR*/
     #menu {
         display: none;
     }
@@ -36,22 +38,7 @@
         font-size: 3rem;
     }
 
-    #events_weather section {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #events_weather {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0 10px;
-    }
-
-    .weather-icon {
-        font-size: 6rem;
-    }
-
+    /*FOOTER*/
     footer {
         display: flex;
         flex-direction: row;
@@ -62,5 +49,6 @@
 
     #socials {
         gap: 30px;
+        transform: scale(.75);
     }
 }
