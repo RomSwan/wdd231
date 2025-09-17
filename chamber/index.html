@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warsaw - Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--Social Media-->
+    <meta property="og:title" content="Warsaw Chamber of Commerce">
+    <meta property="og:description" content="A wepage for buisnesses and buisness information in the Warsaw, Poland area.">
+    <meta property="og:image" content="https://romswan.github.io/wdd231/chamber/images/coat_of_arms.png">
+    <meta property="og:url" content="https://romswan.github.io/wdd231/chamber/directory.html">
+    <!--Description-->
+    <meta name="author" content="Brendan Brady">
+    <meta name="description" content="Warsaw's chamber of commerce website. For buisnesses in Warsaw.">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--JS-->
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <img id="site-logo" src="images/coat_of_arms.png" alt="website logo" loading="lazy">
+            <p>Warsaw Chamber of Commerce</p>
+        </div>
+
+        <button type="button" id="menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="directory"><a href="directory.html">Directory</a></li>
+                <li id="join"><a href="#">Join</a></li>
+                <li id="discover"><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="hero">
+            <img class="hero-img" src="images/warsaw-hero.jpg" alt="Warsaw centre" loading="lazy">
+
+            <button id="ticket-button">Keynote Tickets</button>
+        </div>
+
+        <h1>Home</h1>
+        
+        <div id="events_weather">
+            <section id="events">
+                <h2>Events</h2>
+                <p>Coming soon!</p>
+            </section>
+
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+
+                <div class="stat-display">
+                    <p class="weather-icon">⛅</p>
+
+                    <div id="weather-stats">
+                        <p class="temp"><b>19° C</b></p>
+                        <p><b>Partly Cloudy</b></p>
+                        <p><b>High:</b> 19°</p>
+                        <p><b>Low:</b> 11°</p>
+                        <p><b>Humidity:</b> 87%</p>
+                        <p><b>Sunrise:</b> 06:05</p>
+                        <p><b>Sunset:</b> 18:59</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+
+                <div id="forecast">
+                    <p><b>Yesterday:</b> 26°/17°</p>
+                    <p><b>Today: 19°/11°</b></p>
+                    <p><b>Tomorrow:</b> 24°/12°</p>
+                </div>
+            </section>
+        </div>
+
+        <section id="members">
+            <div id="members-nav">
+                <h2>Our Key Members:</h2>
+
+                <div id="layout-selection">
+                    <button class="display-type" id="grid">GRID</button>
+                    <button class="display-type" id="list">LIST</button>
+                </div>
+            </div>
+
+            <div id="business-cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <b>Warsaw Chamber of Commerce</b><br>
+            Mikołaja Kopernika 30<br>
+            Warsaw, Poland 00-336<br>
+            biuro@wig.waw.pl<br>
+            +48 222 250 111
+        </p>
+
+        <div id="socials">
+            <a href="https://www.youtube.com"><img class="social" src="images/youtube.svg" alt="Link to YouTube" loading="lazy"></a>
+            <a href="https://www.x.com"><img class="social" src="images/x.svg" alt="Link to X" loading="lazy"></a>
+            <a href="https://www.linkedin.com"><img class="social" src="images/linkedin.svg" alt="Link to LinkedIn" loading="lazy"></a>
+        </div>
+
+        <p>
+            WDD 231 Class Project<br>
+            Brendan Brady<br>
+            ©<span id="currentYear"></span> Warsaw Chamber of Commerce<br>
+            <span id="lastModified"></span>   
+        </p>
+    </footer>
+</body>
+</html>
