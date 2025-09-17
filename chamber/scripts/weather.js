@@ -10,6 +10,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const tomorrow = document.querySelector("#tomorrow");
 const day2 = document.querySelector("#day2");
 const day3 = document.querySelector("#day3");
+const day4 = document.querySelector("#day4");
 
 // Variables for URL
 const key = "41ba0ae754f6c527508670f044cd4fb2";
@@ -82,6 +83,7 @@ function displayForecastResults(forecastData) {
     tomorrow.innerHTML = `${Math.round(forecastData.list[1].main.temp_max)}°/${Math.round(forecastData.list[1].main.temp_min)}°c`;
     day2.innerHTML = `${Math.round(forecastData.list[2].main.temp)}°c`;
     day3.innerHTML = `${Math.round(forecastData.list[3].main.temp)}°c`;
+    day4.innerHTML = `${Math.round(forecastData.list[4].main.temp)}°c`;
 }
 
 // Final display
