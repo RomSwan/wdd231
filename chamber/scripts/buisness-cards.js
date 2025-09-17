@@ -4,8 +4,16 @@ const json = "data/members.json";
 async function getBusinessInfo(json) {
     const response = await fetch(json);
     const data = await response.json();
+    let members = data.businesses;
 
-    createCardDisplay(data.businesses);
+    //For index spotlight
+    const index = window.location.pathname.includes("index");
+    if(index) 
+        {
+            members = members.filter(member => member.level == "3");
+        }
+
+    createCardDisplay(members);
 }
 
 // Display
