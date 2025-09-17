@@ -9,11 +9,11 @@ async function getBusinessInfo(json) {
     //For index spotlight
     const index = window.location.pathname.includes("index");
     if(index) 
-        {
-            members = members.filter(member => member.level == "3 - GOLD" || member.level == "2 - SILVER");
-            members.sort(() => .5 - Math.random());
-            members = members.slice(0, 3);
-        }
+    {
+        members = members.filter(member => member.level == "3 - GOLD" || member.level == "2 - SILVER");
+        members.sort(() => .5 - Math.random());
+        members = members.slice(0, 3);
+    }
 
     createCardDisplay(members);
 }
