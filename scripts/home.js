@@ -104,12 +104,18 @@ function createCourseDisplay(courseChoice) {
 
         // Display Content
         card.setAttribute("class", "card");
+        //card.setAttribute("id", course.number);
         card.textContent = `${course.subject} ${course.number}`;
 
         if (course.completed == true) {
             card.setAttribute("class", "completed");
             card.textContent = `${course.subject} ${course.number} ✔`;
         };
+
+        card.addEventListener("click", () => {
+            displayDetails(course);
+            dialog.showModal();
+        });
 
         // Add Display to HTML
         document.querySelector(".two").appendChild(card);
@@ -134,3 +140,32 @@ courseGroups.forEach(group => {
         group.classList.add("displaying");
     });
 });
+
+//-----------------DIALOG BOX-----------------//
+const courseName = document.querySelector('.two');
+const dialog = document.querySelector('#course-details');
+const courseDetails = document.querySelector('#dialog-container');
+const closeDialog = document.querySelector('#course-details button');
+
+closeDialog.addEventListener('click', () => dialog.close());
+
+function displayDialog(courses) {
+    courses.forEach(course => {
+        courseName.addEventListener('click', () => displayDetails(course));
+    })
+};
+
+displayDialog(courses)
+
+function displayDetails(course) {
+    courseDetails.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    dialog.showModal();
+};
