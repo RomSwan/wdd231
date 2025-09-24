@@ -1,0 +1,88 @@
+:root { /*Summer Ocean Breeze*/
+    --main-colour: #E63946; /*Desire*/
+    --secondary-colour: #f1faee; /*Honeydew*/
+    --accent-colour1: #a8dadc; /*Crystal*/
+    --accent-colour2: #457b9d; /*Jelly Bean Blue*/
+    --accent-colour3: #1d3557; /*Space Cadet*/
+}
+
+/*APPLICATION FORM*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-colour1);
+    gap: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+fieldset {
+    width: 80%;
+    border-color: var(--secondary-colour);
+    border: none;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.text-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    height: 40px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+#memberships {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#memberships input {
+    margin: 10px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+textarea {
+    font-size: 15px;
+}
+
+#apply-button {
+    width: 250px;
+    height: 85px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
+    border-color: var(--accent-colour3);
+    border-radius: 5px;
+}
+
+#apply-button:hover {
+    border-color: var(--main-colour);
+    background-color: var(--accent-colour3);
+}

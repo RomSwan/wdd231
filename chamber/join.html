@@ -49,12 +49,12 @@
         <h1>Membership Application</h1>
 
         <section id="application">
-            <form id="form">
+            <form>
                 <h2>Join Our Community!</h2>
 
                 <fieldset id="applicant-info">
                     <div class="form-item"> 
-                        <label for="firstname">First name:
+                        <label class="text-label" for="firstname">First name:
                         <input 
                         type="text" 
                         id="firstname" 
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="lastname">Last name:
+                        <label class="text-label" for="lastname">Last name:
                         <input 
                         type="text" 
                         id="lastname" 
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="organization-title">Organizational title:
+                        <label class="text-label" for="organization-title">Organizational title:
                         <input 
                         type="text" 
                         id="organizational-title" 
@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="email">Email:
+                        <label class="text-label" for="email">Email:
                         <input 
                         type="email" 
                         id="email" 
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="phone">Mobile phone number:
+                        <label class="text-label" for="phone">Mobile phone number:
                         <input 
                         type="tel" 
                         id="phone" 
@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="form-item">
-                        <label for="organization-name">Buisness/organization's name:
+                        <label class="text-label" for="organization-name">Buisness/organization's name:
                         <input 
                         type="text" 
                         id="organization-name" 
@@ -127,37 +127,41 @@
                 <fieldset id="memberships">
                     <legend>Choose a Membership Level:</legend>
 
-                    <label for="non-profit">Non-profit (zero fee)
-                    <input type="radio" id="non-profit" name="membership">
+                    <label for="non-profit">
+                        <input type="radio" id="non-profit" name="membership">
+                        <b>Non-profit</b> (zero fee)
                     </label>
 
-                    <label for="bronze">Bronze (6 000 PLN/ 1 year)
-                    <input type="radio" id="bronze" name="membership">
+                    <label for="bronze">
+                        <input type="radio" id="bronze" name="membership">
+                        <b>Bronze</b> (6 000 PLN/ 1 year)
                     </label>
 
-                    <label for="silver">Silver (12 000 PLN/ 1 year)
-                    <input type="radio" id="silver" name="membership">
+                    <label for="silver">
+                        <input type="radio" id="silver" name="membership">
+                        <b>Silver</b> (12 000 PLN/ 1 year)
                     </label>
 
-                    <label for="gold">Gold (18 000 PLN/ 1 year)
-                    <input type="radio" id="gold" name="membership">
+                    <label for="gold">
+                        <input type="radio" id="gold" name="membership">
+                        <b>Gold</b> (18 000 PLN/ 1 year)
                     </label>
                 </fieldset>
 
                 <fieldset id="organization-description">
-                    <label>Describe Your Organization:
-                    <textarea 
-                    id="description" 
-                    name="description" 
-                    title="Describe your organization" >
-                    </textarea>
+                    <label class="text-label">
+                        <legend>Describe Your Organization:</legend>
+
+                        <textarea 
+                        id="description" 
+                        name="description" 
+                        title="Describe your organization" 
+                        rows="10"></textarea>
                     </label>
                 </fieldset>
 
                 <!--Hidden Timestamp-->
                 <label>
-                    Timestamp:
-
                     <input
                     type="hidden" 
                     id="timestamp" 
@@ -165,11 +169,12 @@
                     value="">
                 </label>
 
-                <button type="submit">Send Application!</button>
+                <button id="apply-button" type="submit">Send Application!</button>
             </form>
         </section>
 
-        <section id="membership-level-cards"></section>
+        <section id="membership-level-cards">
+        </section>
     </main>
 
     <footer>
