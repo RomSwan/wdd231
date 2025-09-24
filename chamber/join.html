@@ -46,7 +46,130 @@
     </header>
 
     <main>
-        <h1>Applications</h1>
+        <h1>Membership Application</h1>
+
+        <section id="application">
+            <form id="form">
+                <h2>Join Our Community!</h2>
+
+                <fieldset id="applicant-info">
+                    <div class="form-item"> 
+                        <label for="firstname">First name:
+                        <input 
+                        type="text" 
+                        id="firstname" 
+                        name="firstname" 
+                        autocomplete="given-name" 
+                        required>
+                        </label>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="lastname">Last name:
+                        <input 
+                        type="text" 
+                        id="lastname" 
+                        name="lastname" 
+                        autocomplete="family-name" 
+                        required>
+                        </label>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="organization-title">Organizational title:
+                        <input 
+                        type="text" 
+                        id="organizational-title" 
+                        name="organizational-title" 
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}">
+                        </label>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email:
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@ddress.com" 
+                        required>
+                        </label>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="phone">Mobile phone number:
+                        <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required>
+                        </label>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="organization-name">Buisness/organization's name:
+                        <input 
+                        type="text" 
+                        id="organization-name" 
+                        name="organization-name"
+                        title="Enter your organization's name"
+                        autocomplete="organization"
+                        required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset id="memberships">
+                    <legend>Choose a Membership Level:</legend>
+
+                    <label for="non-profit">Non-profit (zero fee)
+                    <input type="radio" id="non-profit" name="membership">
+                    </label>
+
+                    <label for="bronze">Bronze (6 000 PLN/ 1 year)
+                    <input type="radio" id="bronze" name="membership">
+                    </label>
+
+                    <label for="silver">Silver (12 000 PLN/ 1 year)
+                    <input type="radio" id="silver" name="membership">
+                    </label>
+
+                    <label for="gold">Gold (18 000 PLN/ 1 year)
+                    <input type="radio" id="gold" name="membership">
+                    </label>
+                </fieldset>
+
+                <fieldset id="organization-description">
+                    <label>Describe Your Organization:
+                    <textarea 
+                    id="description" 
+                    name="description" 
+                    title="Describe your organization" >
+                    </textarea>
+                    </label>
+                </fieldset>
+
+                <!--Hidden Timestamp-->
+                <label>
+                    Timestamp:
+
+                    <input
+                    type="hidden" 
+                    id="timestamp" 
+                    name="timestamp" 
+                    value="">
+                </label>
+
+                <button type="submit">Send Application!</button>
+            </form>
+        </section>
+
+        <section id="membership-level-cards"></section>
     </main>
 
     <footer>
