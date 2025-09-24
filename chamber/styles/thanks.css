@@ -1,0 +1,40 @@
+:root { /*Summer Ocean Breeze*/
+    --main-colour: #E63946; /*Desire*/
+    --secondary-colour: #f1faee; /*Honeydew*/
+    --accent-colour1: #a8dadc; /*Crystal*/
+    --accent-colour2: #457b9d; /*Jelly Bean Blue*/
+    --accent-colour3: #1d3557; /*Space Cadet*/
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+}
+
+p {
+    margin: 15px;
+    max-width: 550px;
+    
+}
+
+#thank-you-message {
+    background-color: var(--accent-colour1);
+    padding: 50px;
+    border: 5px solid var(--accent-colour3);
+}
+
+@media (min-width: 1100px) {
+    h1 {
+        margin-top: 50px;
+    }
+
+    section {
+        margin-bottom: 167px;
+    }
+}
