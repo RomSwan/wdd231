@@ -1,0 +1,31 @@
+{
+    "levels": [
+        {
+            "title": "Non-profit",
+            "price": "FREE",
+            "benefits": 
+            "Access to member-only events, access to exclusive buisness training"
+        },
+
+        {
+            "title": "BRONZE",
+            "price": "6 000 PLN (annually)",
+            "benefits": 
+            "Access to member-only events, access to exclusive buisness training, 30% discount on all paid events"
+        },
+
+        {
+            "title": "SILVER",
+            "price": "12 000 PLN (annually)",
+            "benefits": 
+            "Access to member-only events, access to exclusive buisness training, 40% discount on all paid events, spotlight on our home page"
+        },
+
+        {
+            "title": "GOLD",
+            "price": "18 000 PLN (annually)",
+            "benefits": 
+            "Access to member-only events, special access to exclusive buisness training, 50% discount on all paid events, spotlight on our home page, choose event locations"
+        }
+    ]
+}
