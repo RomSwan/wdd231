@@ -28,7 +28,7 @@ function displayLevelInfo(index) {
                 dialog.innerHTML = `
                     <h2>${level.title} Membership</h2>
                     <p><b>Price: </b>${level.price}</p>
-                    <p><b>Benefits include: </b>${level.benefits}</p>
+                    <p><b>Benefits include:</b><br>${level.benefits}</p>
                     <button id="close-dialog">Close</button>
                 `;
                 dialog.showModal();
