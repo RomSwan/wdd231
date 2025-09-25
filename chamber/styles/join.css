@@ -6,7 +6,7 @@
     --accent-colour3: #1d3557; /*Space Cadet*/
 }
 
-/*APPLICATION FORM*/
+/*-------------------------APPLICATION FORM-------------------------*/
 form {
     display: flex;
     flex-direction: column;
@@ -86,3 +86,54 @@ textarea {
     border-color: var(--main-colour);
     background-color: var(--accent-colour3);
 }
+/*-----------------------------------------------------------------*/
+
+/*-------------------------Membership Cards------------------------*/
+#membership-levels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+#membership-levels h2 {
+    background-color: var(--accent-colour3);
+    padding: 30px 0;
+    width: 98%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--secondary-colour);
+    border-radius: 50px;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+
+    background-color: var(--accent-colour2);
+    color: var(--secondary-colour);
+    border: 5px solid var(--accent-colour3);
+    width: 85%;
+    height: 200px;
+
+    background: 
+    linear-gradient(135deg, transparent 50px, var(--accent-colour2) 0);
+
+}
+
+.level h3 {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.learn-more {
+    transform: scale(2);
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------*/

@@ -21,6 +21,7 @@
     <!--JS-->
     <script src="scripts/common.js" defer></script>
     <script src="scripts/application.js" defer></script>
+    <script src="scripts/membership-level.js" defer></script>
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -173,8 +174,31 @@
             </form>
         </section>
 
-        <section id="membership-level-cards">
+        <section id="membership-levels">
+            <h2>Membership Levels:</h2>
+
+            <div class="level" id="non-profit-card">
+                <h3>Non-profit Membership Level</h3>
+                <button id="non-profit" class="learn-more">Learn More</button>
+            </div>
+
+            <div class="level" id="bronze-card">
+                <h3>Bronze Membership Level</h3>
+                <button id="bronze" class="learn-more">Learn More</button>
+            </div>
+
+            <div class="level" id="silver-card">
+                <h3>Silver Membership Level</h3>
+                <button id="silver" class="learn-more">Learn More</button>
+            </div>
+
+            <div class="level" id="gold-card">
+                <h3>Gold Membership Level</h3>
+                <button id="gold" class="learn-more">Learn More</button>
+            </div>
         </section>
+
+        <dialog id="membership-card"></dialog>
     </main>
 
     <footer>
