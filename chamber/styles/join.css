@@ -182,12 +182,12 @@ textarea {
 
 
 /*---------Dialog Box---------*/
-#membership-card:modal {
+:modal {
     display: grid;
     width: 400px;
 }
 
-#membership-card::backdrop {
+::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
