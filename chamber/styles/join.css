@@ -87,7 +87,6 @@ textarea {
     background-color: var(--accent-colour3);
 }
 /*-----------------------------------------------------------------*/
-
 /*-------------------------Membership Cards------------------------*/
 #membership-levels {
     display: flex;
@@ -114,18 +113,17 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     font-size: 2.5rem;
-
     background-color: var(--accent-colour2);
     color: var(--secondary-colour);
     border: 5px solid var(--accent-colour3);
     width: 85%;
     height: 200px;
-
     background: 
     linear-gradient(135deg, transparent 50px, var(--accent-colour2) 0);
 
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease-out forwards;
 }
 
 .level h3 {
@@ -136,6 +134,7 @@ textarea {
 .learn-more {
     transform: scale(2);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .learn-more, #close-dialog {
@@ -146,6 +145,41 @@ textarea {
     background-color: var(--main-colour);
     color: white;
 }
+
+.learn-more::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, .5);
+    transform: skewX(-45deg);
+    animation: sheen 2s linear infinite;
+}
+
+@keyframes sheen {
+    0% {
+        left: -75%;
+    }
+    25% {
+        left: 125%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 /*---------Dialog Box---------*/
 #membership-card:modal {
