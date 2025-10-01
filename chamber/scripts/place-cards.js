@@ -10,7 +10,6 @@ function createCardDisplay(places) {
 
         let photo = document.createElement("figure"); // Photo
 
-        let info = document.createElement("div")
         let title = document.createElement("h2"); // Title
         let address = document.createElement("address"); // Address
         let description = document.createElement("p"); // Description
