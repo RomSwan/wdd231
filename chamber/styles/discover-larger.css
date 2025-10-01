@@ -1,5 +1,25 @@
+@media (min-width: 1025px) {
+    #place-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .description, .address {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+}
+
+
 @media (min-width: 1100px) {
     h1 {
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .description, .address {
+        font-size: 1.5rem;
+        margin-left: 0;
     }
 }

@@ -6,45 +6,79 @@
     --accent-colour3: #1d3557; /*Space Cadet*/
 }
 
-@media (max-width: 640px) { /*Small Screens*/
-    
-}
-
-main {
+#place-cards {
     display: grid;
     justify-items: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 5px solid var(--accent-colour3);
     width: 400px;
     margin-bottom: 30px;
     background-color: var(--main-colour);
     color: var(--secondary-colour);
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    "title"
+    "photo"
+    "description"
+    "address"
+    "button";
 }
+
+.title {
+    grid-area: title;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.photo {
+    grid-area: photo;
+
+    width: 100%;
+    border-top: 5px solid var(--accent-colour3);
+    border-bottom: 5px solid var(--accent-colour3);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+}
+
 
 .photo, img {
     margin: 0;
     padding: 0;
-    height: 267px;
-    width: 400px;
+    max-height: 267px;
+    max-width: 400px;
 }
 
-.photo {
-    border-bottom: 5px solid var(--accent-colour3);
+.description {
+    grid-area: description;
+    margin: 10px;
 }
 
-.info {
-    margin: 0 10px;
+.address {
+    grid-area: address;
 }
 
 .learn-more {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    transform: scale(1.7);
+    grid-area: button;
+
     cursor: pointer;
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    background-color: var(--secondary-colour);
+}
+
+.learn-more:hover {
+    background-color: var(--accent-colour1);
 }

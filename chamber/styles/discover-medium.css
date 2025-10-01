@@ -1,0 +1,47 @@
+:root { /*Summer Ocean Breeze*/
+    --main-colour: #E63946; /*Desire*/
+    --secondary-colour: #f1faee; /*Honeydew*/
+    --accent-colour1: #a8dadc; /*Crystal*/
+    --accent-colour2: #457b9d; /*Jelly Bean Blue*/
+    --accent-colour3: #1d3557; /*Space Cadet*/
+}
+
+@media (min-width: 641px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "photo description"
+        "photo address"
+        "button button";
+
+        width: 90%;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+
+    .photo {
+        border-right: 5px solid var(--accent-colour3);
+    }
+
+    .photo, .description, .address {
+        justify-self: start;
+    }
+
+    .description, .address {
+        font-size: 1.1rem;
+    }
+    
+    .address {
+        margin-left: 10px
+    }
+}
+
+@media (min-width: 800px) {
+    .description, .address {
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }
+}

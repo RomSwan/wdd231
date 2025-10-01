@@ -21,8 +21,6 @@ function createCardDisplay(places) {
         card.setAttribute("class", "card"); // Card
 
         photo.setAttribute("class", "photo"); // Photo
-
-        info.setAttribute("class", "info");
         title.setAttribute("class", "title"); // Title
         address.setAttribute("class", "address"); // Address
         description.setAttribute("class", "description"); // Description
@@ -38,10 +36,9 @@ function createCardDisplay(places) {
 
         // Add Display to HTML
         card.appendChild(photo);
-        card.appendChild(info);
-        info.appendChild(title);
-        info.appendChild(address);
-        info.appendChild(description);
+        card.appendChild(title);
+        card.appendChild(address);
+        card.appendChild(description);
         card.appendChild(button);
 
         document.querySelector("#place-cards").appendChild(card);
