@@ -26,6 +26,15 @@
         border-right: 5px solid var(--accent-colour3);
     }
 
+    .photo img {
+        transition: box-shadow .4s ease;
+    }
+
+    .photo img:hover {
+        background: var(--accent-colour3);
+        box-shadow: 0 0 50px var(--secondary-colour);
+    }
+
     .photo, .description, .address {
         justify-self: start;
     }
