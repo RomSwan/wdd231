@@ -6,6 +6,12 @@
     --accent-colour3: #1d3557; /*Space Cadet*/
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------CARDS*/
 #place-cards {
     display: grid;
     justify-items: center;
@@ -81,4 +87,24 @@
 
 .learn-more:hover {
     background-color: var(--accent-colour1);
+}
+/*---------------------------------*/
+/*---------------------LAST VISITED*/
+#visited-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#lastVisited {
+    text-align: center;
+    font-size: 1.6rem;
+    border: 3px solid var(--main-colour);
+    width: 400px;
+    padding: 10px 100px;
+    background-color: var(--accent-colour3);
+    color: var(--secondary-colour);
+    font-weight: 600;
 }
